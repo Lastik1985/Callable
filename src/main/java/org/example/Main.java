@@ -25,7 +25,7 @@ public class Main {
         System.out.println("\nПолучение результата от одной из задач");
         int result = threadPool.invokeAny(Arrays.stream(myCallable).toList());
         Thread.sleep(100);
-        System.out.println("Результат самой быстрой задачи потока = " + result);
+        System.out.println("Количество сообщений самого быстрого потока = " + result);
 
         threadPool.shutdown();
 
